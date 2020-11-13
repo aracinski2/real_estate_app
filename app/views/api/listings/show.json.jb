@@ -6,6 +6,7 @@
   bathrooms: @listing.bathrooms,
   floors: @listing.floors,
   availability: @listing.availability,
-  address: @listing.address,
-  price: @listing.price
+  price: @listing.price,
+  latitude: @listing.latitude,
+  longitude: @listing.longitude
 }

@@ -8,15 +8,12 @@ class Api::ListingsController < ApplicationController
       bathrooms: params[:bathrooms],
       floors: params[:floors],
       availability: params[:availability],
-      address: params[:address],
-      price: params[:price]
+      price: params[:price],
+      latitude: params[:latitude],
+      longitude: params[:longitude]
     )
     @listing.save
     render 'show.json.jb'
   end
-  # def address
-  #   @address = @listing.address
-  #   geocoded_by @address
-
-  # end
+ 
 end
